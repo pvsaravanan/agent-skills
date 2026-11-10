@@ -1,0 +1,12 @@
+{
+  "name": "caveman",
+  "version": "1.0.0",
+  "description": "Terse-output voice, compact commit and review helpers, lean work-pattern skills, and cavecrew subagents. No hooks, CLI or network services required.",
+  "author": {
+    "name": "pvsaravanan",
+    "url": "https://github.com/pvsaravanan"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/pvsaravanan/agent-skills",
+  "keywords": ["caveman", "terse", "tokens", "commit", "review", "subagents"]
+}
