@@ -1,0 +1,13 @@
+{
+  "name": "bang-motion-ae-bridge",
+  "version": "1.0.0",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "SVG\u2192PNG renderer for the Bang Motion AE bridge",
+  "dependencies": {
+    "puppeteer": "^25.10.0"
+  },
+  "private": true
+}
