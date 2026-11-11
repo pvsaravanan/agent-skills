@@ -102,6 +102,39 @@
       "repository": "https://github.com/pvsaravanan/agent-skills"
     },
     {
+      "name": "web3d",
+      "source": "./",
+      "strict": false,
+      "description": "3D and rich-motion web skills: Three.js, React Three Fiber, Lottie, Rive, Spline, Blender-to-web glTF pipeline and Barba.js page transitions.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "threejs",
+        "r3f",
+        "webgl",
+        "lottie",
+        "rive",
+        "spline",
+        "blender",
+        "gltf",
+        "barba"
+      ],
+      "author": {
+        "name": "pvsaravanan",
+        "url": "https://github.com/pvsaravanan"
+      },
+      "homepage": "https://github.com/pvsaravanan/agent-skills",
+      "skills": [
+        "./skills/threejs-webgl",
+        "./skills/react-three-fiber",
+        "./skills/lottie-animations",
+        "./skills/rive-interactive",
+        "./skills/blender-web-pipeline",
+        "./skills/spline-interactive",
+        "./skills/barba-js"
+      ]
+    },
+    {
       "name": "founder",
       "source": "./",
       "strict": false,
