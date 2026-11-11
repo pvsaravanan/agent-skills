@@ -1,0 +1,19 @@
+{
+  "name": "emil-ui",
+  "version": "1.0.0",
+  "description": "Emil Kowalski's UI and animation skills: design engineering, building and reviewing motion, gestures, mobile-native web, Sonner, Swift.",
+  "license": "MIT",
+  "author": {
+    "name": "pvsaravanan",
+    "url": "https://github.com/pvsaravanan"
+  },
+  "homepage": "https://github.com/pvsaravanan/agent-skills",
+  "keywords": [
+    "ui",
+    "animation",
+    "motion",
+    "design-engineering",
+    "react",
+    "swift"
+  ]
+}

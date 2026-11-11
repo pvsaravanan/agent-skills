@@ -1,0 +1,17 @@
+{
+  "name": "video-tools",
+  "version": "1.0.0",
+  "description": "Video and motion skills: HTML/GSAP motion graphics, Vox-style explainer pipeline, and launch videos from a project.",
+  "license": "MIT",
+  "author": {
+    "name": "pvsaravanan",
+    "url": "https://github.com/pvsaravanan"
+  },
+  "homepage": "https://github.com/pvsaravanan/agent-skills",
+  "keywords": [
+    "video",
+    "motion-graphics",
+    "explainer",
+    "launch-video"
+  ]
+}

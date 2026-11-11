@@ -31,8 +31,7 @@
     },
     {
       "name": "emil-ui",
-      "source": "./",
-      "strict": false,
+      "source": "./plugins/emil-ui",
       "description": "Emil Kowalski's UI and animation skills: design engineering, building and reviewing motion, gestures, mobile-native web, Sonner, Swift.",
       "version": "1.0.0",
       "license": "MIT",
@@ -44,26 +43,6 @@
         "react",
         "swift"
       ],
-      "skills": [
-        "./skills/emil-design-eng",
-        "./skills/animate",
-        "./skills/animate-expo",
-        "./skills/review-animations",
-        "./skills/improve-animations",
-        "./skills/find-animation-opportunities",
-        "./skills/remove-animations",
-        "./skills/choreograph",
-        "./skills/animation-performance",
-        "./skills/animation-vocabulary",
-        "./skills/apple-design",
-        "./skills/gestures",
-        "./skills/mobile-native",
-        "./skills/break-ui",
-        "./skills/prototype",
-        "./skills/pick-ui-library",
-        "./skills/ask-sonner",
-        "./skills/write-swift"
-      ],
       "author": {
         "name": "pvsaravanan",
         "url": "https://github.com/pvsaravanan"
@@ -73,8 +52,7 @@
     },
     {
       "name": "gsap",
-      "source": "./",
-      "strict": false,
+      "source": "./plugins/gsap",
       "description": "Official GreenSock GSAP skills: core API, timelines, ScrollTrigger, plugins, utils, React, performance and framework integration.",
       "version": "1.0.0",
       "license": "MIT",
@@ -83,16 +61,6 @@
         "animation",
         "scrolltrigger",
         "react"
-      ],
-      "skills": [
-        "./skills/gsap-core",
-        "./skills/gsap-timeline",
-        "./skills/gsap-scrolltrigger",
-        "./skills/gsap-plugins",
-        "./skills/gsap-utils",
-        "./skills/gsap-react",
-        "./skills/gsap-performance",
-        "./skills/gsap-frameworks"
       ],
       "author": {
         "name": "pvsaravanan",
@@ -126,8 +94,7 @@
     },
     {
       "name": "founder",
-      "source": "./",
-      "strict": false,
+      "source": "./plugins/founder",
       "description": "Founder pack: test a business idea with a board, competitor map, simulated buyer panel, pricing, unit economics, marketing, ops, launch and a computed business plan.",
       "version": "1.0.0",
       "license": "MIT",
@@ -138,19 +105,6 @@
         "unit-economics",
         "marketing"
       ],
-      "skills": [
-        "./skills/founder-board",
-        "./skills/founder-brand",
-        "./skills/founder-cfo",
-        "./skills/founder-competitors",
-        "./skills/founder-consumer",
-        "./skills/founder-launch",
-        "./skills/founder-marketing",
-        "./skills/founder-offer",
-        "./skills/founder-ops",
-        "./skills/founder-plan",
-        "./skills/founder-pricing"
-      ],
       "author": {
         "name": "pvsaravanan",
         "url": "https://github.com/pvsaravanan"
@@ -160,8 +114,7 @@
     },
     {
       "name": "video-tools",
-      "source": "./",
-      "strict": false,
+      "source": "./plugins/video-tools",
       "description": "Video and motion skills: HTML/GSAP motion graphics, Vox-style explainer pipeline, and launch videos from a project.",
       "version": "1.0.0",
       "license": "MIT",
@@ -170,12 +123,6 @@
         "motion-graphics",
         "explainer",
         "launch-video"
-      ],
-      "skills": [
-        "./skills/bang-motion",
-        "./skills/vox-explainer",
-        "./skills/brag",
-        "./skills/brag-slim"
       ],
       "author": {
         "name": "pvsaravanan",
