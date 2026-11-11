@@ -4,6 +4,7 @@ Personal collection of agent skills.
 
 | Skill | Description |
 |---|---|
+| [`text-to-lottie`](skills/text-to-lottie) | Generates production-ready Lottie animations from text prompts (logos, typography, loaders, UI feedback, diagrams, data). Fetches the official Skottie player with `npx degit` at runtime, so it needs Node, npm and network access. |
 | [`agent-reach`](skills/agent-reach) | Read-only access to content across platforms (GitHub, YouTube, Reddit, Twitter/X, LinkedIn jobs and more) via the Agent Reach CLI. English translation. |
 | [`brag`](plugins/video-tools/skills/brag) | Turn a project website into a short, shareable launch video using HyperFrames. |
 | [`brag-slim`](plugins/video-tools/skills/brag-slim) | Lightweight single-file version of `brag`: turns a project directory or URL into a launch video with no bundled assets. |
@@ -31,6 +32,7 @@ On Claude Code 2.1.275 or later, one step per plugin:
 /plugin install emil-ui --marketplace pvsaravanan/agent-skills
 /plugin install gsap --marketplace pvsaravanan/agent-skills
 /plugin install web3d --marketplace pvsaravanan/agent-skills
+/plugin install text-to-lottie --marketplace pvsaravanan/agent-skills
 /plugin install founder --marketplace pvsaravanan/agent-skills
 /plugin install video-tools --marketplace pvsaravanan/agent-skills
 /plugin install caveman --marketplace pvsaravanan/agent-skills
@@ -38,7 +40,7 @@ On Claude Code 2.1.275 or later, one step per plugin:
 /plugin install security-audit --marketplace pvsaravanan/agent-skills
 ```
 
-Plugins: `emil-ui` (18 UI/animation skills), `gsap` (8 skills), `web3d` (7 skills), `founder` (11 skills), `video-tools` (`bang-motion`, `vox-explainer`, `brag`, `brag-slim`), `caveman`, `agent-reach`, `security-audit`.
+Plugins: `emil-ui` (18 UI/animation skills), `gsap` (8 skills), `web3d` (7 skills), `founder` (11 skills), `video-tools` (`bang-motion`, `vox-explainer`, `brag`, `brag-slim`), `caveman`, `text-to-lottie`, `agent-reach`, `security-audit`.
 
 **Copy a skill by hand.** Clone the repo and copy the skill folder(s) you want (each lives in `plugins/<plugin>/skills/`, or in `skills/` for standalone ones) into `~/.claude/skills/` (or `.claude/skills/` in a project). Keep the `founder-*` folders together, since they reference each other by sibling path:
 
@@ -64,3 +66,4 @@ Eleven skills from [Jakeschincariol/founder-skill](https://github.com/Jakeschinc
 - The `founder-*` skills are from [Jakeschincariol/founder-skill](https://github.com/Jakeschincariol/founder-skill) by Jake Schincariol, MIT licensed (license copy in `plugins/founder/skills/founder-board/LICENSE`).
 - The `gsap-*` skills are from [greensock/gsap-skills](https://github.com/greensock/gsap-skills) by GreenSock, MIT licensed (license copy in `plugins/gsap/skills/gsap-core/LICENSE`). They are the maintainers' own guidance and recommend GSAP when no animation library is specified.
 - The `web3d` skills are from [freshtechbro/claudedesignskills](https://github.com/freshtechbro/claudedesignskills). Its LICENSE says MIT (copy in `plugins/web3d/LICENSE`), though its plugin manifests say Apache-2.0. The broken `react-three-fiber/scripts/component_generator.py` (it does not compile) is omitted.
+- `text-to-lottie` is from [diffusionstudio/lottie](https://github.com/diffusionstudio/lottie) by Diffusion Studio, MIT licensed (license copy in `skills/text-to-lottie/LICENSE`). Only the skill and its references are included; the evals are left out. The skill fetches the official player at runtime.

@@ -132,6 +132,29 @@
       "repository": "https://github.com/pvsaravanan/agent-skills"
     },
     {
+      "name": "text-to-lottie",
+      "source": "./",
+      "strict": false,
+      "description": "Generate production-ready Lottie animations from text prompts (logos, typography, loaders, UI feedback, diagrams, data). Bootstraps the official Skia Skottie player with npx degit; needs Node and npm.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "lottie",
+        "animation",
+        "svg",
+        "skottie",
+        "motion"
+      ],
+      "author": {
+        "name": "pvsaravanan",
+        "url": "https://github.com/pvsaravanan"
+      },
+      "homepage": "https://github.com/pvsaravanan/agent-skills",
+      "skills": [
+        "./skills/text-to-lottie"
+      ]
+    },
+    {
       "name": "agent-reach",
       "source": "./",
       "strict": false,
