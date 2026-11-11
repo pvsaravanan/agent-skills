@@ -12,6 +12,7 @@ Personal collection of agent skills.
 | [`bang-motion`](skills/bang-motion) | HTML + CSS + GSAP (+ Three.js) motion graphics delivered as a single `index.html`: openers, promos, and explainers, with a style brief first, deterministic timelines, a camera rig, and optional frame export. English translation. |
 | `emil-*` UI/animation pack (18 skills) | Emil Kowalski's design-engineering skills: `emil-design-eng`, `animate`, `animate-expo`, `review-animations`, `improve-animations`, `find-animation-opportunities`, `remove-animations`, `choreograph`, `animation-performance`, `animation-vocabulary`, `apple-design`, `gestures`, `mobile-native`, `break-ui`, `prototype`, `pick-ui-library`, `ask-sonner`, `write-swift`. |
 | `founder-*` (11 skills) | The founder pack: tests a business idea before launch, from a three-lens board and a simulated 100-buyer panel to pricing, unit economics, marketing, ops, launch and a computed business-plan verdict. See [the founder pack](#the-founder-pack). |
+| `gsap-*` (8 skills) | The official GSAP skills from GreenSock: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins`, `gsap-utils`, `gsap-react`, `gsap-performance`, `gsap-frameworks`. |
 | [`security-audit`](skills/security-audit) | Security guidance and source-first vulnerability review for codebases, APIs, services, CLIs and libraries. |
 
 ## Install
@@ -27,6 +28,7 @@ On Claude Code 2.1.275 or later, one step per plugin:
 
 ```
 /plugin install emil-ui --marketplace pvsaravanan/agent-skills
+/plugin install gsap --marketplace pvsaravanan/agent-skills
 /plugin install founder --marketplace pvsaravanan/agent-skills
 /plugin install video-tools --marketplace pvsaravanan/agent-skills
 /plugin install caveman --marketplace pvsaravanan/agent-skills
@@ -34,7 +36,7 @@ On Claude Code 2.1.275 or later, one step per plugin:
 /plugin install security-audit --marketplace pvsaravanan/agent-skills
 ```
 
-Plugins: `emil-ui` (18 UI/animation skills), `founder` (11 skills), `video-tools` (`bang-motion`, `vox-explainer`, `brag`, `brag-slim`), `caveman`, `agent-reach`, `security-audit`.
+Plugins: `emil-ui` (18 UI/animation skills), `gsap` (8 skills), `founder` (11 skills), `video-tools` (`bang-motion`, `vox-explainer`, `brag`, `brag-slim`), `caveman`, `agent-reach`, `security-audit`.
 
 **Copy a skill by hand.** Clone the repo and copy the folder(s) you want into `~/.claude/skills/` (or `.claude/skills/` in a project). Keep the `founder-*` folders together, since they reference each other by sibling path:
 
@@ -58,3 +60,4 @@ Eleven skills from [Jakeschincariol/founder-skill](https://github.com/Jakeschinc
 - `bang-motion` is from [bangtutorial/bang-motion](https://github.com/bangtutorial/bang-motion) by Bang Tutorial, MIT licensed (see `skills/bang-motion/LICENSE`); this copy is an English translation (docs/gallery, README and plugin metadata omitted). It needs a browser with CDN access (GSAP, Three.js, fonts); Node + puppeteer and ffmpeg are optional for snapshots and MP4 export.
 - The UI/animation pack (`emil-design-eng`, `animate`, `gestures`, `break-ui`, and the rest listed above) is from [emilkowalski/skills](https://github.com/emilkowalski/skills) by Emil Kowalski, MIT licensed (license copy in `skills/emil-design-eng/LICENSE`).
 - The `founder-*` skills are from [Jakeschincariol/founder-skill](https://github.com/Jakeschincariol/founder-skill) by Jake Schincariol, MIT licensed (license copy in `skills/founder-board/LICENSE`).
+- The `gsap-*` skills are from [greensock/gsap-skills](https://github.com/greensock/gsap-skills) by GreenSock, MIT licensed (license copy in `skills/gsap-core/LICENSE`). They are the maintainers' own guidance and recommend GSAP when no animation library is specified.

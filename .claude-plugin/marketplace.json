@@ -72,6 +72,36 @@
       "repository": "https://github.com/pvsaravanan/agent-skills"
     },
     {
+      "name": "gsap",
+      "source": "./",
+      "strict": false,
+      "description": "Official GreenSock GSAP skills: core API, timelines, ScrollTrigger, plugins, utils, React, performance and framework integration.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "gsap",
+        "animation",
+        "scrolltrigger",
+        "react"
+      ],
+      "skills": [
+        "./skills/gsap-core",
+        "./skills/gsap-timeline",
+        "./skills/gsap-scrolltrigger",
+        "./skills/gsap-plugins",
+        "./skills/gsap-utils",
+        "./skills/gsap-react",
+        "./skills/gsap-performance",
+        "./skills/gsap-frameworks"
+      ],
+      "author": {
+        "name": "pvsaravanan",
+        "url": "https://github.com/pvsaravanan"
+      },
+      "homepage": "https://github.com/pvsaravanan/agent-skills",
+      "repository": "https://github.com/pvsaravanan/agent-skills"
+    },
+    {
       "name": "founder",
       "source": "./",
       "strict": false,
