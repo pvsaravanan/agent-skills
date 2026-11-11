@@ -14,6 +14,37 @@ Personal collection of agent skills.
 | `founder-*` (11 skills) | The founder pack: tests a business idea before launch, from a three-lens board and a simulated 100-buyer panel to pricing, unit economics, marketing, ops, launch and a computed business-plan verdict. See [the founder pack](#the-founder-pack). |
 | [`security-audit`](skills/security-audit) | Security guidance and source-first vulnerability review for codebases, APIs, services, CLIs and libraries. |
 
+## Install
+
+**As a Claude Code plugin marketplace** (recommended; installs the skills along with their helper files):
+
+```
+/plugin marketplace add pvsaravanan/agent-skills
+/plugin install emil-ui@pvsaravanan-agent-skills
+```
+
+On Claude Code 2.1.275 or later, one step per plugin:
+
+```
+/plugin install emil-ui --marketplace pvsaravanan/agent-skills
+/plugin install founder --marketplace pvsaravanan/agent-skills
+/plugin install video-tools --marketplace pvsaravanan/agent-skills
+/plugin install caveman --marketplace pvsaravanan/agent-skills
+/plugin install agent-reach --marketplace pvsaravanan/agent-skills
+/plugin install security-audit --marketplace pvsaravanan/agent-skills
+```
+
+Plugins: `emil-ui` (18 UI/animation skills), `founder` (11 skills), `video-tools` (`bang-motion`, `vox-explainer`, `brag`, `brag-slim`), `caveman`, `agent-reach`, `security-audit`.
+
+**Copy a skill by hand.** Clone the repo and copy the folder(s) you want into `~/.claude/skills/` (or `.claude/skills/` in a project). Keep the `founder-*` folders together, since they reference each other by sibling path:
+
+```bash
+git clone https://github.com/pvsaravanan/agent-skills
+cp -r agent-skills/skills/gestures ~/.claude/skills/
+```
+
+**Per-skill requirements:** `agent-reach` needs the Agent Reach CLI (the skill walks through installing it from the upstream GitHub release after asking you; do not use the PyPI package of the same name); `vox-explainer` needs `ATLASCLOUD_API_KEY` and `ffmpeg`; `bang-motion` needs a browser with CDN access.
+
 ## The founder pack
 
 Eleven skills from [Jakeschincariol/founder-skill](https://github.com/Jakeschincariol/founder-skill). Run in this order, or on their own: [`board`](skills/founder-board) → [`competitors`](skills/founder-competitors) → [`consumer`](skills/founder-consumer) → [`pricing`](skills/founder-pricing) → [`offer`](skills/founder-offer) → [`cfo`](skills/founder-cfo) → [`marketing`](skills/founder-marketing) → [`brand`](skills/founder-brand) → [`ops`](skills/founder-ops) → [`launch`](skills/founder-launch) → [`plan`](skills/founder-plan). Each skill is a `skills/founder-<name>` folder, and they reference each other by sibling path, so keep them together. Some include small Python helpers (Python 3.8+, no dependencies).

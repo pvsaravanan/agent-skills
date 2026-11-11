@@ -23,6 +23,19 @@ One command to read every platform: `agent-reach`. Read-only. Output is a single
 
 Before acting, say one sentence: "Using the agent-reach skill (X channel)". Once this skill is invoked, the rules below apply for the rest of the session.
 
+## If the `agent-reach` command is missing
+
+The skill needs the `agent-reach` CLI. If `agent-reach version` fails with "command not found", tell the user the CLI is not installed and ask before installing anything. On their yes, follow the upstream install guide (https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md):
+
+```bash
+uv --version || curl -LsSf https://astral.sh/uv/install.sh | sh     # only if uv is missing (Windows: see the install guide)
+uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip
+agent-reach setup
+agent-reach version                                                   # 1.6+ prints a JSON object
+```
+
+If `agent-reach` is still not found, run `uv tool update-shell` and open a new shell. **Never `pip install agent-reach` or install it from PyPI: the PyPI package with that name is not this project.** Show `result.installation_report.markdown` exactly as described in "When installation finishes". Never install without the user's agreement.
+
 ## Choosing a path
 
 - For public content, use your own search/read tools first (you can add `site:domain`). Check separately whether you actually got the body text, the comments, and the subtitles. If that is enough, answer directly: do not install channels or log in.
